@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.family-amatic {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+body {
+  background-color: #d8d9db;
+}
+
+header {
+  background-image: url("../img/startup-photos.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.height-all {
+  height: 100vh;
+}
+
+.background-cap {
+  background-color: rgba(66,66,66,0.6);
+}
+
+
+
+.color-white {
+  color: #ffffff;
+}
+
+.background-rose {
+  background-color: #dac3b7;
+}
+
+.img__top-5 {
+  height: 70px;
+  width: 70px;
+}
+
+/*icons*/
+aside[class^="icon-"] {
+  background-size: 42px 42px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-js {
+  background-image: url("../img/icon/js.svg");
+  background-color: #e5bb31;
+}
+
+.icon-jquery {
+  background-image: url("../img/icon/jquery.png");
+}
+
+.icon-bootstrap {
+  background-image: url("../img/icon/bs.png");
+}
+
+.icon-materialize {
+  background-image: url("../img/icon/materialize.svg");
+}
+/*circulo*/
+
+.circular {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  font-size: 2.5rem;
+}
+
+.alrededor {
+  width: 220px;
+  height: 220px;
+  opacity: 0;
+
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.open.alrededor {
+  opacity: 1;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.alrededor a {
+  text-decoration: none;
+  color: #F6B4B8;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+}
+
+.circular > .icon-helado {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding: 10px;
+  background: #fbac92;
+}
