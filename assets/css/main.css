@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.family-satisfy {
+  font-family: 'Satisfy', cursive;
+}
+
 body {
   background-color: #d8d9db;
 }
@@ -22,6 +26,45 @@ header {
   background-position: center center;
 }
 
+section {
+  padding: 56px 0;
+}
+
+#i-am {
+  padding-top: 70px;
+}
+
+#i-am p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 15rem;
+  }
+
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.img-logo {
+  height: 49px;
+  width: 49px;
+  margin-left: 21px;
+}
+
 .height-all {
   height: 100vh;
 }
@@ -30,19 +73,29 @@ header {
   background-color: rgba(66,66,66,0.6);
 }
 
+.background-dark {
+  background-color: rgba(66,66,66,1);
+}
 
-
-.color-white {
+.color-nav, .color-white {
   color: #ffffff;
 }
 
+.color-nav:hover {
+  color: #F6B4B8;
+}
+
 .background-rose {
-  background-color: #dac3b7;
+  background-color: #ead3c7;
 }
 
 .img__top-5 {
   height: 70px;
   width: 70px;
+}
+
+.padding-around {
+  padding: 28px;
 }
 
 /*icons*/
@@ -70,6 +123,12 @@ aside[class^="icon-"] {
 .icon-materialize {
   background-image: url("../img/icon/materialize.svg");
 }
+
+footer {
+  background-color: rgb(61, 61, 61);
+  padding: 21px;
+}
+
 /*circulo*/
 
 .circular {
