@@ -1,53 +1,64 @@
 * {
   box-sizing: border-box;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
-.family-amatic {
-  font-family: 'Amatic SC', cursive;
-  font-size: 2.5rem;
+.family-megrim {
+  font-family: 'Megrim', cursive;
   font-weight: bold;
-}
-
-.family-satisfy {
-  font-family: 'Satisfy', cursive;
 }
 
 body {
-  background-color: #d8d9db;
+  background: -moz-linear-gradient(top, rgba(162,134,135,1) 0%, rgba(57,62,70,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(162,134,135,1), color-stop(100%, rgba(57,62,70,1))));
+  background: -webkit-linear-gradient(top, rgba(162,134,135,1) 0%, rgba(57,62,70,1) 100%);
+  background: -o-linear-gradient(top, rgba(162,134,135,1) 0%, rgba(57,62,70,1) 100%);
+  background: -ms-linear-gradient(top, rgba(162,134,135,1) 0%, rgba(57,62,70,1) 100%);
+  background: linear-gradient(to bottom, rgba(162,134,135,1) 0%, rgba(57,62,70,1) 100%);
 }
 
 header {
-  background-image: url("../img/startup-photos.jpg");
+  background-image: url("../img/fotos-lab/IMG_5121.JPG");
+  background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 section {
-  padding: 56px 0;
+  padding: 14px 0 42px 0;
 }
 
-#i-am {
-  padding-top: 70px;
-}
-
-#i-am p {
-  font-size: 2.5rem;
+.subtitle {
+  color: #ffffff;
+  font-size: 1em;
   font-weight: bold;
+  line-height: 0.7em;
+  padding-left: 10px;
 }
 
 h1 {
-  font-size: 7rem;
+  color: rgb(249,184,190);
+  font-size: 4em;
+  line-height: 0.7em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.1em;
+  font-weight: 600;
+  letter-spacing: 4.5px;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 15rem;
+    font-size: 5.5em;
+    line-height: 0.7em;
   }
-
+  .subtitle {
+    font-size: 1.5em;
+  }
 }
 .flex-center {
   display: flex;
@@ -70,23 +81,25 @@ h1 {
 }
 
 .background-cap {
-  background-color: rgba(66,66,66,0.6);
+  background-color: rgba(121,100,101,0.7);
 }
 
 .background-dark {
-  background-color: rgba(66,66,66,1);
+  background-color: rgba(121,100,101,1);
 }
 
-.color-nav, .color-white {
+.text-nav {
   color: #ffffff;
+  font-size: 1.09em;
+  letter-spacing: 2.5px;
 }
 
-.color-nav:hover {
+.text-nav:hover {
   color: #F6B4B8;
 }
 
 .background-rose {
-  background-color: #ead3c7;
+
 }
 
 .img__top-5 {
