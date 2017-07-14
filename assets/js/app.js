@@ -6,12 +6,10 @@ $(document).ready(function(){
     var currentScroll = window.pageYOffset || document.body.scrollTop;
     var navHeader = document.getElementById("nav--header");
       if (currentScroll >= 150) {
-        navHeader.classList.add("background-dark");
-        navHeader.classList.remove("background-cap");
+        navHeader.classList.add("bg-dark");
 
       } else {
-        navHeader.classList.add("background-cap");
-        navHeader.classList.remove("background-dark");
+        navHeader.classList.remove("bg-dark");
       }
   }, false);
 
