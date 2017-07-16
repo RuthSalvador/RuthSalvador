@@ -13,13 +13,9 @@ $(document).ready(function(){
       }
   }, false);
 
-  /** carousel **/
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    items:1,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-  });
 });
 
+$('.carousel').carousel({
+  interval: 3000,
+  pause: null
+});

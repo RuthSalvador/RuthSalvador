@@ -1,0 +1,5 @@
+#SCSS caché
+.sass-cache/
+
+#map css
+main.css.map
