@@ -119,3 +119,7 @@ function ChangePhrase(prefijo, array, padre) {
 var loveIt = ['Tecnología 💻 ','Música ♫ ', 'Cine 🎥 '];
 var skillTec = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'GitHub', 'Bootstrap', 'Materialize', 'Gulp', 'passion & love'];
 ChangePhrase('Yo ♥ ',loveIt, '#skill-phrase');
+
+$('.smoove-active').smoove({
+  offset:'25%'
+});

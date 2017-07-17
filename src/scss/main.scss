@@ -1,3 +1,6 @@
+@import "vendor/_ihover.scss";
+@import "vendor/_animate.scss";
+
 $color-light: rgb(247,247,247);
 $color-glow: rgb(177,107,117);
 $color-shine: rgb(225, 102, 127);
@@ -38,14 +41,14 @@ $color-gray: rgb(57,62,70);
 }
 
 header {
-  background-image: url("../img/fotos-lab/IMG_5121.JPG");
+  background-image: url("../img/ruthsalvador-fondo.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: top center;
 }
 
 section {
-  padding: 14px 0 42px 0;
+  padding: 14px 0 21px 0;
 }
 
 .icon-bar {
@@ -172,30 +175,24 @@ hr {
 }
 
 #skills {
-  background-image: url("../img/bg/woman-lap.jpg");
+  background-image: url("../img/bg/bg-woman-lap.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-}
-
-.bg-blur{
-  background: inherit;
   z-index: 1;
   color: #fff;
   width: 100%;
   position: relative;
-  margin: 42px 0;
-  padding-bottom: 28px;
+  padding-bottom: 63px;
   &:before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 112px;
     right: 0;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     background: inherit;
-    filter: blur(7px);
+    filter: blur(5px);
     z-index: -1;
   }
 }
