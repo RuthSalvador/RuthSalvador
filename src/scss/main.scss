@@ -18,9 +18,7 @@ $color-gray: rgb(57,62,70);
 }
 
 .family-merienda {
-  color: $color-dark;
   font-family: 'Merienda', cursive;
-  font-size: 1.5em;
   padding: 14px 0;
 }
 
@@ -33,7 +31,7 @@ $color-gray: rgb(57,62,70);
   background: linear-gradient(to bottom, lighten($color-dark,35%) 0%, $color-gray 100%);
 }*/
 
-#about {
+.bg-pinkwater {
   background-image: url("../img/bg/pinkwatercolor.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -84,6 +82,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 21px;
 }
 
 .column {
@@ -117,9 +116,6 @@ hr {
 }
 
 #skill-phrase {
-  background-image: url("../img/bg/dotted.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 35px 0;
   p {
     font-size: 3em;
@@ -155,16 +151,28 @@ hr {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.bg-blur {
-  -webkit-filter: blur(7px);
-  filter: blur(7px);
-  background-color: $color-shine;
+  position: relative;
 }
 
-.no-blur {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
+.bg-blur{
+  background: inherit;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  margin: 42px 0;
+  padding-bottom: 28px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    background: inherit;
+    filter: blur(7px);
+    z-index: -1;
+  }
 }
 
 /*icons*/
@@ -180,6 +188,9 @@ aside[class^="icon-"] {
 footer {
   background-color: $color-dark;
   padding: 21px 0 11px 0;
+  p {
+    color: $color-light;
+  }
 }
 
 .rotate {

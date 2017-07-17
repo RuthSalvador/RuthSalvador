@@ -9,9 +9,7 @@
   font-weight: bold; }
 
 .family-merienda {
-  color: #392d2d;
   font-family: 'Merienda', cursive;
-  font-size: 1.5em;
   padding: 14px 0; }
 
 /*.bg-gradient {
@@ -22,7 +20,7 @@
   background: -ms-linear-gradient(top, lighten($color-dark,35%) 0%, $color-gray 100%);
   background: linear-gradient(to bottom, lighten($color-dark,35%) 0%, $color-gray 100%);
 }*/
-#about {
+.bg-pinkwater {
   background-image: url("../img/bg/pinkwatercolor.jpg");
   background-repeat: no-repeat;
   background-size: contain; }
@@ -61,7 +59,8 @@ hr {
 .flex-center {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 21px; }
 
 .column {
   flex-direction: column; }
@@ -86,9 +85,6 @@ hr {
   padding: 28px 0; }
 
 #skill-phrase {
-  background-image: url("../img/bg/dotted.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 35px 0; }
   #skill-phrase p {
     font-size: 3em;
@@ -116,16 +112,27 @@ hr {
   background-image: url("../img/bg/woman-lap.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .bg-blur {
-  -webkit-filter: blur(7px);
-  filter: blur(7px);
-  background-color: #e1667f; }
-
-.no-blur {
-  -webkit-filter: blur(0px);
-  filter: blur(0px); }
+  background: inherit;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  margin: 42px 0;
+  padding-bottom: 28px; }
+  .bg-blur:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    background: inherit;
+    filter: blur(7px);
+    z-index: -1; }
 
 /*icons*/
 aside[class^="icon-"] {
@@ -138,6 +145,8 @@ aside[class^="icon-"] {
 footer {
   background-color: #392d2d;
   padding: 21px 0 11px 0; }
+  footer p {
+    color: #f7f7f7; }
 
 .rotate {
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.7);
