@@ -46,16 +46,23 @@ header {
 
 section {
   padding: 14px 0 42px 0;
-
 }
 
+.icon-bar {
+  background-color: $color-shine;
+}
+.navbar-toggle{
+  background-color: $color-light;
+}
 .blocks-about {
   font-size: 1.20em;
+  padding: 0 7px;
 }
 
 
 h1 {
-  line-height: 0.7em;
+  font-size: 3.5em;
+  line-height: 0.8em;
   margin: 0;
 }
 
@@ -72,12 +79,21 @@ hr {
   width: 50px;
 }
 
+@media (min-width: 360px) and (max-width:767px) {
+  h1 {
+    font-size: 5.5em;
+    line-height: 0.8em;
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 9.5em;
     line-height: 0.7em;
   }
 }
+
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -111,15 +127,24 @@ hr {
 }
 
 .about-more {
-
   padding: 28px 0;
 }
 
 #skill-phrase {
-  padding: 35px 0;
+  padding: 14px 0;
   p {
-    font-size: 3em;
-    margin-left: calc(50vw - 5em);
+    font-size: 1.4em;
+    margin-left: calc(50vw - 4em);
+  }
+}
+
+@media (min-width: 768px) {
+  #skill-phrase {
+    padding: 35px 0;
+    p {
+      font-size: 3em;
+      margin-left: calc(50vw - 5em);
+    }
   }
 }
 
