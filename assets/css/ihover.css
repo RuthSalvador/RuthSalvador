@@ -10,10 +10,10 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.ih-item span {
+.ih-item a {
   color: rgb(57, 45, 45);
 }
-.ih-item span:hover {
+.ih-item a:hover {
   text-decoration: none;
 }
 .ih-item img {
@@ -79,8 +79,8 @@
 }
 
 .ih-item.circle.effect1 .spinner {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border: 10px solid #c35f68;
   border-right-color: #ead3c7;
   border-bottom-color: #ead3c7;
@@ -90,8 +90,8 @@
   transition: all 0.8s ease-in-out;
 }
 .ih-item.circle.effect1 {
-  width: 150px;
-  height:150px;
+  width: 120px;
+  height:120px;
 }
 .ih-item.circle.effect1 .img {
   position: absolute;

@@ -118,6 +118,15 @@ hr {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.bg-blur {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  background-color: #e1667f; }
+
+.no-blur {
+  -webkit-filter: blur(0px);
+  filter: blur(0px); }
+
 /*icons*/
 aside[class^="icon-"] {
   background-size: 42px 42px;
