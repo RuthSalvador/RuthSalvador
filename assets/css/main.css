@@ -7538,12 +7538,6 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   background-repeat: no-repeat;
   background-size: contain; }
 
-header {
-  background-image: url("../img/ruthsalvador-fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center; }
-
 section {
   padding: 14px 0 21px 0; }
 
